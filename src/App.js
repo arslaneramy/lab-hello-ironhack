@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Article from "./Article";
 
 const icon1 = "/images/icon1.png";
 const icon2 = "/images/icon2.png";
@@ -21,34 +22,26 @@ class App extends Component {
         </div>
 
         <div id="features">
-          <article className="mktg">
-            <div>
-              <img src={icon1} alt="" width="80px" />
-            </div>
-            <h3>Declarative </h3>
-            <div>React makes it painless to create interactive UIs </div>
-          </article>
-          <article className="mktg">
-            <div>
-              <img src={icon2} alt="" width="80px" />
-            </div>
-            <h3>Componenents </h3>
-            <div>Build encapsulated componenents that manages their state</div>
-          </article>
-          <article className="mktg">
-            <div>
-              <img src={icon3} alt="" width="80px" />
-            </div>
-            <h3>Single-Way</h3>
-            <div>A set of immaculate values are passed to the component's.</div>
-          </article>
-          <article className="mktg">
-            <div>
-              <img src={icon4} alt="" width="80px" />
-            </div>
-            <h3>JSX</h3>
-            <div>Stastically-type designed to run on modern browsers</div>
-          </article>
+          <Article
+            img={icon1}
+            title="Declarative"
+            description="React makes it painless to create interactive UIs"
+          />
+          <Article
+            img={icon2}
+            title="Components"
+            description="Build encapsulated componenents that manages their state"
+          />
+          <Article
+            img={icon3}
+            title="Single-Way"
+            description="A set of immaculate values are passed to the component's"
+          />
+          <Article
+            img={icon4}
+            title="JSX"
+            description="Stastically-type designed to run on modern browsers"
+          />
         </div>
       </div>
     );
